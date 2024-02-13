@@ -22,6 +22,94 @@ Visibility in PHP OOP refers to the accessibility of properties and methods in a
 
 In this course, you'll learn how to use these different levels of visibility to control access to your code.
 
+### 📦 Encapsulation + Getters and Setters
+
+### 🎭 Abstraction
+
+
+---
+
+### 🏠 Properties Deep Dive
+
+### 🎩 Magic Methods
+
+### 📜 Abstract Classes
+
+### 🖋️ Abstract Methods
+
+### 🤝 Interfaces
+
+### 🔄 Polymorphism
+
+### 📝 Quiz 3: Knowledge check three
+
+---
+
+### 📚 Namespaces
+
+### 🔄 Autoloading
+
+### 🧩 Traits
+
+### 📌 Static Keyword, Static Methods and Late Static Binding
+
+### ❗ Error Handling With Exceptions
+
+### 📝 Quiz 4: Organizing Object Oriented Code
+
+### 📦 Composer - Install 3rd Party Packages
+
+### 🛠️ Installing MySQL on your computer
+
+### 📚 Introduction to PHP Data Objects (PDO)
+
+### 🎯 PDO Practice
+
+
+---
+
+### 🧪 Introduction to testing
+
+### 🧪 Introduction to PHPUnit
+
+### 🧪 Testing objects
+
+### 🧪 Setup, tear down, and testing errors and exceptions
+
+### 🧪 Test doubles and mocking objects
+
+### 🧪 Introduction to test driven development
+
+### 🧪 Test driven development part 2
+
+
+---
+
+### 📚 Final Keyword
+
+### 📚 Cloning Objects
+
+### 📚 Serializing Objects
+
+### 📚 Anonymous Classes
+
+### 📚 Comparing Objects
+
+
+---
+
+### 📚 Array Revision
+
+### 📚 ArrayAccess - Access objects like they are arrays
+
+### 📚 Iterator - Iterate over an object like it is an array
+
+### 📚 IteratorAggregate - Select a custom iterator to iterate over an object
+
+### 📚 ArrayObject - the all-in-one solution
+
+---
+
 ## 📝 Study Tips
 
 - Don't worry too much about configuration details. The focus of this course is on understanding and applying OOP concepts.
