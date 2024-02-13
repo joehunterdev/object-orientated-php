@@ -24,6 +24,10 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### 📦 Encapsulation + Getters and Setters
 
+ - Funcionality is all defined in one place
+ - Defined logically where data is kept
+ - Data inside the object cant be modified outside the object
+
 ### 🎭 Abstraction
 
 
