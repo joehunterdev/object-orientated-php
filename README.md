@@ -1,6 +1,8 @@
 # 📘 Object-Oriented Programming in PHP
 
-This repository contains materials and exercises for a course on Object-Oriented Programming (OOP) in PHP. The course covers several key concepts in OOP, including constructors, inheritance, and visibility.
+This repository contains materials and exercises for a course on Object-Oriented Programming (OOP) in PHP. The course covers several key concepts in OOP, including constructors, inheritance, and visibility. 
+
+Based in 4 pillars of OOP: Encapsulation, Abstraction, Inheritance and Polymorphism.
 
 ## 📚 Course Contents
 
@@ -29,7 +31,8 @@ In this course, you'll learn how to use these different levels of visibility to 
  - Data inside the object cant be modified outside the object
 
 ### 🎭 Abstraction
-
+- To provide an interface that is simple as possible
+- The process of hiding the complex implementation details and showing only the necessary features of the object.
 
 ---
 
