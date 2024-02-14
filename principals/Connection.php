@@ -16,12 +16,11 @@ class Connection
     public function __get($name)
     {
         return $this->$name;
-
     }
     /*
     * Decide how to react when treated like a string
     * @return string
-    */ 
+    */
     public function __toString()
     {
         return "Conference ID: {$this->conferenceId} Connection ID: {$this->connectionId}";
@@ -36,6 +35,7 @@ class Connection
     {
         return self::$count;
     }
+
     /**
      * Destructor will be called when there are no references to a particular object
      */
@@ -43,16 +43,16 @@ class Connection
     {
         self::$count--;
     }
+    
     //1.0 Using this 
 
     public function setConnectionId($ip)
     {
-        if (filter_var($ip, FILTER_VALIDATE_IP)){
+        if (filter_var($ip, FILTER_VALIDATE_IP)) {
             $this->connectionId = $ip;
         } else {
 
             exit("invalid ip address");
         }
-
     }
 }
