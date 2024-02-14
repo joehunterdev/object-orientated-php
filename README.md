@@ -37,10 +37,10 @@ In this course, you'll learn how to use these different levels of visibility to 
 ---
 
 ### Properties Deep Dive 🏠
-    - `::` - Scope Resolution Operator
+    - `::` Scope Resolution Operator
 
 ### Magic Methods 🎩
-
+    - There are a number of "magic" methods in PHP that are automatically called when certain events occur. For example, the `__construct` method is called when an object is created, and the `__toString` method is called when an object is used in a string context. In this course, you'll learn how to use these magic methods to add functionality to your classes.
 ### Abstract Classes 📜
 
 ### Abstract Methods 🖋️
