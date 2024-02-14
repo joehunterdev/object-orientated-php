@@ -43,9 +43,8 @@ class Connection
     {
         self::$count--;
     }
-    
-    //1.0 Using this 
 
+    //1.0 Using this 
     public function setConnectionId($ip)
     {
         if (filter_var($ip, FILTER_VALIDATE_IP)) {
