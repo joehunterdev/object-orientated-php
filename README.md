@@ -1,6 +1,6 @@
 # Object-Oriented Programming in PHP 📘
 
-This repository contains materials and exercises for a course on Object-Oriented Programming (OOP) in PHP. The course covers several key concepts in OOP, including constructors, inheritance, and visibility. 
+This repository contains materials and exercises for a course on Object-Oriented Programming (OOP) in PHP. The course covers several key concepts in OOP, including constructors, inheritance, and visibility.
 
 Based in 4 pillars of OOP: Encapsulation, Abstraction, Inheritance and Polymorphism.
 
@@ -26,22 +26,30 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Encapsulation + Getters and Setters 📦
 
- - Funcionality is all defined in one place
- - Defined logically where data is kept
- - Data inside the object cant be modified outside the object
+- Funcionality is all defined in one place
+- Defined logically where data is kept
+- Data inside the object cant be modified outside the object
 
 ### Abstraction 🎭
+
 - To provide an interface that is simple as possible
 - The process of hiding the complex implementation details and showing only the necessary features of the object.
 
 ---
 
 ### Properties Deep Dive 🏠
+
     - `::` Scope Resolution Operator
 
 ### Magic Methods 🎩
+
     - There are a number of "magic" methods in PHP that are automatically called when certain events occur. For example, the `__construct` method is called when an object is created, and the `__toString` method is called when an object is used in a string context. In this course, you'll learn how to use these magic methods to add functionality to your classes.
+
 ### Abstract Classes 📜
+
+    - An abstract class is a class that **cannot be instantiated on its own** and is typically used as a base class for other classes.
+
+    - The abstract class provides properties and funciontality which is shared by all the classes that inherit from it.
 
 ### Abstract Methods 🖋️
 
@@ -73,7 +81,6 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### PDO Practice 🎯
 
-
 ---
 
 ### Introduction to testing 🧪
@@ -90,7 +97,6 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Test driven development part 2 🧪
 
-
 ---
 
 ### Final Keyword 📚
@@ -102,7 +108,6 @@ In this course, you'll learn how to use these different levels of visibility to 
 ### Anonymous Classes 📚
 
 ### Comparing Objects 📚
-
 
 ---
 
@@ -122,8 +127,6 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 - Don't worry too much about configuration details. The focus of this course is on understanding and applying OOP concepts.
 - Spend most of your time on the exercises. The best way to learn programming is by doing, so make sure to practice what you learn in the lessons.
-
-
 
 PHP
 
@@ -164,4 +167,3 @@ Composer
 Testing-PHP
 
 Test-Driven-Development
-
