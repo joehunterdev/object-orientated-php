@@ -37,6 +37,7 @@ In this course, you'll learn how to use these different levels of visibility to 
 ---
 
 ### Properties Deep Dive 🏠
+    - `::` - Scope Resolution Operator
 
 ### Magic Methods 🎩
 
@@ -121,3 +122,46 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 - Don't worry too much about configuration details. The focus of this course is on understanding and applying OOP concepts.
 - Spend most of your time on the exercises. The best way to learn programming is by doing, so make sure to practice what you learn in the lessons.
+
+
+
+PHP
+
+OOP
+
+Learning-PHP
+
+PHP-Course
+
+Constructors
+
+Inheritance
+
+Visibility
+
+Encapsulation
+
+Abstraction
+
+Polymorphism
+
+PHPUnit
+
+PDO
+
+Namespaces
+
+Autoloading
+
+Traits
+
+Error-Handling
+
+MySQL
+
+Composer
+
+Testing-PHP
+
+Test-Driven-Development
+
