@@ -55,15 +55,21 @@ In this course, you'll learn how to use these different levels of visibility to 
 ### Abstract Methods 🖋️
 
         - Declared in an abstract class implementation is provided by the classes that inherit from the abstract class.
-       
+
         - if class extends three dimensions shape aka abstract it must implement the abstract method `getVolume`
+        - Good for:
+            - You want to provide a common interface for different classes
+            - You want to enforce certain methods to be implemented by the child class
+            - You are designing a large functional unit by using the Template Method patter
 
 ### Interfaces 🤝
 
     - Default implementation of a method in an interface
-    
-### Polymorphism 🔄
 
+### Polymorphism 🔄
+    - Objects that can take on many forms
+    -
+    
 ### Quiz 3: Knowledge check three 📝
 
 ---
@@ -134,7 +140,12 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 - Don't worry too much about configuration details. The focus of this course is on understanding and applying OOP concepts.
 - Spend most of your time on the exercises. The best way to learn programming is by doing, so make sure to practice what you learn in the lessons.
+- Use oop and uml together to understand the concepts better
 
+## Weakpoints
+    - Closure functions
+    - Abstract classes and methods
+    - Uml diagrams
 PHP
 
 OOP
