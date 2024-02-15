@@ -68,7 +68,9 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Polymorphism 🔄
     - Objects that can take on many forms
-    -
+        - an instance of an object that can take more than one type is polymorphic
+    - Injecting this single type is not as usefull `public function updateStockFromFile(string $path, CsvFileReader $fileReader): array`
+    - Using `instanceof` we can check if the object is of a certain type  
     
 ### Quiz 3: Knowledge check three 📝
 
@@ -93,7 +95,7 @@ In this course, you'll learn how to use these different levels of visibility to 
 ### Introduction to PHP Data Objects (PDO) 📚
 
 ### PDO Practice 🎯
-
+ 
 ---
 
 ### Introduction to testing 🧪
@@ -136,16 +138,19 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ---
 
-## Study Tips 📝
+## Tips 📝
 
 - Don't worry too much about configuration details. The focus of this course is on understanding and applying OOP concepts.
 - Spend most of your time on the exercises. The best way to learn programming is by doing, so make sure to practice what you learn in the lessons.
 - Use oop and uml together to understand the concepts better
+- Sketchout in comments first before writing the code
 
-## Weakpoints
+## Revision
     - Closure functions
     - Abstract classes and methods
     - Uml diagrams
+    - Dependency injection
+
 PHP
 
 OOP

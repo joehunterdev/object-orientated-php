@@ -1,11 +1,21 @@
 <?php
-require 'FileReader.php';
+require 'FileReaderInterface.php';
 
-class CsvFileReader extends FileReader
+class CsvFileReader implements FileReaderInterface
 {
 
-    public function getData()
+    public function readFileAsAssociativeArray(string $path): array
     {
-        return $this->data;
+        $file = fopen($path, 'r');
+        $data = [];
+        $header = fgetcsv($file);
+        while ($row = fgetcsv($file)) {
+            $data[] = array_combine($header, $row);
+        }
+        fclose($file);
+        return $data;
     }
+ 
 }
+
+ 

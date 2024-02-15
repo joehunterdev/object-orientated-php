@@ -17,9 +17,10 @@ require 'env.php';
     <?php
 
     $linkedInStorage = new FileStorage(CACHE_DIR . 'linkedin_api_cache.json');
-    $linkedInJobsApiClient = new LinkedInApiClient();
-    $linkedInResult = $linkedInJobsApiClient->getJobData('Full Stack Developer', 'Malaga', 'spain', 200);
-    $linkedInStorage->store($linkedInResult);
+    // $linkedInJobsApiClient = new LinkedInApiClient();
+    // $linkedInResult = $linkedInJobsApiClient->getJobData('Full Stack Developer', 'Malaga', 'spain', 200);
+    $linkedInStorage->retrieve($linkedInResult);
+    $linkedInStorage->storeAsCsv($linkedInStorage->retrieve());
 
     $salariesStorage = new FileStorage(CACHE_DIR . 'salary_api_cache.json');
     $salariesApiClient = new SalaryApiClient();

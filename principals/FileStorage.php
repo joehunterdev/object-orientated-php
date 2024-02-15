@@ -41,8 +41,8 @@ class FileStorage
     public function store($data)
     {
         if (empty($data)) {
-           // throw new Exception("Cannot store null data");
-           return;
+            // throw new Exception("Cannot store null data");
+            return;
         }
 
         $json = json_encode($data);
@@ -53,5 +53,27 @@ class FileStorage
     {
         $json = file_get_contents($this->filePath);
         return json_decode($json, true);
+    }
+
+    public function storeAsCsv($data)
+    {
+        if (empty($data)) {
+            throw new Exception("Cannot store empty data");
+        }
+
+        $fileInfo = pathinfo($this->filePath);
+        $csvFilePath = $fileInfo['dirname'] . '/' . $fileInfo['filename'] . '.csv';
+        $file = fopen($csvFilePath, 'w');
+
+
+        // Write the header
+        fputcsv($file, array_keys($data[0]));
+
+        // Write the data
+        foreach ($data as $row) {
+            fputcsv($file, $row);
+        }
+
+        fclose($file);
     }
 }
