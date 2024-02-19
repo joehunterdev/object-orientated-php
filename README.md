@@ -67,11 +67,12 @@ In this course, you'll learn how to use these different levels of visibility to 
     - Default implementation of a method in an interface
 
 ### Polymorphism 🔄
+
     - Objects that can take on many forms
         - an instance of an object that can take more than one type is polymorphic
     - Injecting this single type is not as usefull `public function updateStockFromFile(string $path, CsvFileReader $fileReader): array`
-    - Using `instanceof` we can check if the object is of a certain type  
-    
+    - Using `instanceof` we can check if the object is of a certain type
+
 ### Quiz 3: Knowledge check three 📝
 
 ---
@@ -95,27 +96,46 @@ In this course, you'll learn how to use these different levels of visibility to 
 ### Introduction to PHP Data Objects (PDO) 📚
 
 ### PDO Practice 🎯
- 
+
 ---
 
 ### Introduction to testing 🧪
+
     - VSCODE: PHPUnit for VSCode
 
 ### Introduction to PHPUnit 🧪
+
     - The PHPUnit testing framework is a great way to test your PHP code. It provides a simple and easy-to-use interface for writing and running tests, and it's widely used in the PHP community.
     - `$ composer require --dev phpunit/phpunit`
-    - Naming tests is important 
+    - Naming tests is important
     - For assertsions we can extend the `PHPUnit\Framework\TestCase` class
     - Detecting Tests:
      - naming methods as `tests` or in will help php unit discover tests
      - `phpunit --testdox` will show the test names
      - DocBlock
      - To run a test `php vendor/bin/phpunit tests/ExampleAssertionsTest.php --colors`
+     - `--filter the_cart_tax_value_can_be_changed_statically` to run a single test
 
 ### Testing objects 🧪
-    - 
+
+    - Simply call your object and test the methods inside your test method
+    1. phpunit.xml file can be used to configure the tests this goes in the root
+    2. `<phpunit colors="true" bootstrap="vendor/autoload.php">` add colors and autoload classes
+    3. Dont forget to configure in composer.json `"autoload": `
+    4. `composer dump-autoload -o` to update the autoload file -optimized
+    5. Then you can simply run `./vendor/bin/phpunit --verbose`
+        - This sshoudl result in a cache file in the vendor folder
+        - Disable cache  cacheResult="false" in the phpunit.xml file
+
+    - A Single file:  `php vendor/bin/phpunit tests/CartTest.php` to see the test names
 
 ### Setup, tear down, and testing errors and exceptions 🧪
+
+    - This can run on the wholeapp, folders or on a test by test basis
+    - You can make setup dry by using hte setUp method
+    - Dont forget arrangement is important. The order of your tests in case of implementing static for example.
+    - We can levarage tearDown() method to reset everthing after each run
+    - Testing exceptions is important to make sure the code is working as expected
 
 ### Test doubles and mocking objects 🧪
 
@@ -157,10 +177,12 @@ In this course, you'll learn how to use these different levels of visibility to 
 - Sketchout in comments first before writing the code
 
 ## Revision
+
     - Closure functions
     - Abstract classes and methods
     - Uml diagrams
     - Dependency injection
+    - VSCode PHPUnit Sidebar
 
 PHP
 

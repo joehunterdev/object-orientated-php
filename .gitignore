@@ -3,7 +3,10 @@
 todo.md
 
 **/vendor/
+!**/tdd/vendor/phpunit.xml
+
 **/node_modules/
+**/composer.lock
 
 # Ignore system files
 .DS_Store
@@ -16,7 +19,7 @@ Thumbs.db
 .idea/
 
 # Ignore files related to testing
-/phpunit.xml
+#/phpunit.xml
 /.phpunit.result.cache
 
 # Ignore Composer's .lock file
