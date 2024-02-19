@@ -99,10 +99,21 @@ In this course, you'll learn how to use these different levels of visibility to 
 ---
 
 ### Introduction to testing 🧪
+    - VSCODE: PHPUnit for VSCode
 
 ### Introduction to PHPUnit 🧪
+    - The PHPUnit testing framework is a great way to test your PHP code. It provides a simple and easy-to-use interface for writing and running tests, and it's widely used in the PHP community.
+    - `$ composer require --dev phpunit/phpunit`
+    - Naming tests is important 
+    - For assertsions we can extend the `PHPUnit\Framework\TestCase` class
+    - Detecting Tests:
+     - naming methods as `tests` or in will help php unit discover tests
+     - `phpunit --testdox` will show the test names
+     - DocBlock
+     - To run a test `php vendor/bin/phpunit tests/ExampleAssertionsTest.php --colors`
 
 ### Testing objects 🧪
+    - 
 
 ### Setup, tear down, and testing errors and exceptions 🧪
 
