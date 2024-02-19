@@ -150,6 +150,10 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Test doubles and mocking objects 🧪
 
+    - Mocking is creating objects that simulate the behavior of real objects sending emails or api requests.
+    - ` /tests` for all in the folder
+    - we can also group them for example in a group called db `/tests --group db` || even exclude ` --exclude-group db`
+
 ### Introduction to test driven development 🧪
 
 ### Test driven development part 2 🧪
@@ -188,9 +192,7 @@ In this course, you'll learn how to use these different levels of visibility to 
 - Sketchout in comments first before writing the code
 - Use `composer require symfony/var-dumper --dev` to dump variables in a more readable way
 
-More usefull ways:
-    - `$this->fail('A TypeError was not thrown');`
-    - `$this->assertStringStartsWith(`
+More usefull ways: - `$this->fail('A TypeError was not thrown');` - `$this->assertStringStartsWith(`
 
 ## Revision
 

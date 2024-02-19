@@ -3,9 +3,6 @@
 use App\Cart;
 use PHPUnit\Framework\TestCase;
 
-
-
-
 class CartTest extends TestCase
 {
     protected $cart;
