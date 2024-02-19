@@ -55,5 +55,23 @@ class CartTest extends TestCase
         $this->cart->price = 10;
         $this->cart->addToPrice('a string');
     }
- 
+
+    /**
+     * @test
+     */
+
+    public function a_type_error_is_thrown_when_trying_to_add_a_string_to_the_price2()
+    {
+        try {
+            $this->cart->price = 10;
+            $this->cart->addToPrice('a string');
+            $this->fail('A TypeError was not thrown');
+        } catch (TypeError $e) {
+
+            // dd('Argument 1 passed to App\Cart::addToPrice() must be of the type int, string given'
+            //     . $e->getMessage());
+
+            $this->assertStringStartsWith('Argument 1 passed to App\Cart::addToPrice() must be of the type int, string given',$e->getMessage());
+        }
+    }
 }

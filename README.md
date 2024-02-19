@@ -126,8 +126,18 @@ In this course, you'll learn how to use these different levels of visibility to 
     5. Then you can simply run `./vendor/bin/phpunit --verbose`
         - This sshoudl result in a cache file in the vendor folder
         - Disable cache  cacheResult="false" in the phpunit.xml file
-
     - A Single file:  `php vendor/bin/phpunit tests/CartTest.php` to see the test names
+
+    ```
+    <?xml version="1.0" encoding="UTF-8"?>
+        <phpunit colors="true" bootstrap="vendor/autoload.php">
+        <testsuites>
+            <testsuite name="basic">
+                <directory>tests</directory>
+            </testsuite>
+        </testsuites>
+        </phpunit>
+    ```
 
 ### Setup, tear down, and testing errors and exceptions 🧪
 
@@ -135,7 +145,8 @@ In this course, you'll learn how to use these different levels of visibility to 
     - You can make setup dry by using hte setUp method
     - Dont forget arrangement is important. The order of your tests in case of implementing static for example.
     - We can levarage tearDown() method to reset everthing after each run
-    - Testing exceptions is important to make sure the code is working as expected
+    - Testing exceptions:  `$this->expectException(TypeError::class);`
+    - Use `composer require symfony/var-dumper --dev` to dump variables in a more readable way by Adam Wathan (tailwindcss creator) meanig you can just `dd(exception)`
 
 ### Test doubles and mocking objects 🧪
 
@@ -175,6 +186,11 @@ In this course, you'll learn how to use these different levels of visibility to 
 - Spend most of your time on the exercises. The best way to learn programming is by doing, so make sure to practice what you learn in the lessons.
 - Use oop and uml together to understand the concepts better
 - Sketchout in comments first before writing the code
+- Use `composer require symfony/var-dumper --dev` to dump variables in a more readable way
+
+More usefull ways:
+    - `$this->fail('A TypeError was not thrown');`
+    - `$this->assertStringStartsWith(`
 
 ## Revision
 

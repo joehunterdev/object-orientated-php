@@ -3,7 +3,7 @@
 todo.md
 
 **/vendor/
-!**/tdd/vendor/phpunit.xml
+!**/vendor/phpunit.xml
 
 **/node_modules/
 **/composer.lock
