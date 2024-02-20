@@ -156,7 +156,17 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Introduction to test driven development 🧪
 
-### Test driven development part 2 🧪
+    - Write the test first
+    - And go about writing the code to pass the test
+    - Be weary of 1 / true values in the test in assert equals. assertSame = identical
+    - TDD will help you think more about the code and have you write only the code you need
+    - Run your tests often and inmedediate "no class found" is it that stupid ? This could help detect errors early
+    - Refactor tests first as you see fit like renaming methods etc. 
+    - in the example we have passed a user object 
+
+    - `phpunit --testdox` to see the test names
+    - `composer require --dev phpunit/phpunit symfony/var-dumper`
+    - `composer dump-autoload -o`
 
 ---
 

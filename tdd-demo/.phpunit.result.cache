@@ -1,0 +1,1 @@
+{"version":1,"defects":{"AccountTest::an_account_number_can_be_set":8,"AccountTest::an_account_can_be_related_to_a_user":8,"AccountTest::can_account_be_hydrated_on_creation":8},"times":{"AccountTest::an_account_number_can_be_set":0.007,"AccountTest::an_account_can_be_related_to_a_user":0,"AccountTest::can_account_be_hydrated_on_creation":0}}
