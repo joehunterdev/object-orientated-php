@@ -25,4 +25,7 @@ Singleton Pattern: If the Player class represents a resource that should have ex
 
 Composition: As you've described, the Library class could be composed of multiple Sample objects. This is a good example of the "composition over inheritance" principle.
 
+![Diagram](sample-bridge.dio)
+
+
  
