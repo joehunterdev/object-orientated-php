@@ -115,7 +115,7 @@ In this course, you'll learn how to use these different levels of visibility to 
      - DocBlock
      - To run a test `php vendor/bin/phpunit tests/ExampleAssertionsTest.php --colors`
      - `--filter the_cart_tax_value_can_be_changed_statically` to run a single test
-
+        - 
 ### Testing objects 🧪
 
     - Simply call your object and test the methods inside your test method
@@ -127,6 +127,8 @@ In this course, you'll learn how to use these different levels of visibility to 
         - This sshoudl result in a cache file in the vendor folder
         - Disable cache  cacheResult="false" in the phpunit.xml file
     - A Single file:  `php vendor/bin/phpunit tests/CartTest.php` to see the test names
+    - displayDetailsOnTestsThatTriggerDeprecations="true"
+    - -debug --verbose
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -140,6 +142,8 @@ In this course, you'll learn how to use these different levels of visibility to 
     ```
 
 ### Setup, tear down, and testing errors and exceptions 🧪
+
+
 
     - This can run on the wholeapp, folders or on a test by test basis
     - You can make setup dry by using hte setUp method
