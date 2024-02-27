@@ -79,6 +79,11 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Namespaces 📚
 
+- Allwow for better organization by goruping classes that work together
+- Allow same name to be used for more than one class
+- `namespace Database\Mysql;` declare a class withing a namespace
+- `use namespace as ` when getting in to duplication of class names 
+
 ### Autoloading 🔄
 
 ### Traits 🧩
