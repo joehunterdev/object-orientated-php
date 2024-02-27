@@ -82,9 +82,18 @@ In this course, you'll learn how to use these different levels of visibility to 
 - Allwow for better organization by goruping classes that work together
 - Allow same name to be used for more than one class
 - `namespace Database\Mysql;` declare a class withing a namespace
-- `use namespace as ` when getting in to duplication of class names 
+- `use namespace as ` when getting in to duplication of class names
 
 ### Autoloading 🔄
+
+- Dont forget now in PHP you can define the **property itself with the scope in parameter**
+- `public function __construct(public string $databaseUrl = 'mysql://localhost:3306/dbname')`
+- Autoloading gets around a tone of requires and their ordering
+- **spl** Standard PHP Library
+- You can createe you own autoloader by mapping filenames into namespace
+- this will the n reduce the level of code you have to write when you need a class
+- **FQN** Fully Qualified Name
+- You can ofcourse use other classes into your classes that have came from external sources
 
 ### Traits 🧩
 
@@ -120,7 +129,8 @@ In this course, you'll learn how to use these different levels of visibility to 
      - DocBlock
      - To run a test `php vendor/bin/phpunit tests/ExampleAssertionsTest.php --colors`
      - `--filter the_cart_tax_value_can_be_changed_statically` to run a single test
-        - 
+        -
+
 ### Testing objects 🧪
 
     - Simply call your object and test the methods inside your test method
@@ -148,8 +158,6 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Setup, tear down, and testing errors and exceptions 🧪
 
-
-
     - This can run on the wholeapp, folders or on a test by test basis
     - You can make setup dry by using hte setUp method
     - Dont forget arrangement is important. The order of your tests in case of implementing static for example.
@@ -170,8 +178,8 @@ In this course, you'll learn how to use these different levels of visibility to 
     - Be weary of 1 / true values in the test in assert equals. assertSame = identical
     - TDD will help you think more about the code and have you write only the code you need
     - Run your tests often and inmedediate "no class found" is it that stupid ? This could help detect errors early
-    - Refactor tests first as you see fit like renaming methods etc. 
-    - in the example we have passed a user object 
+    - Refactor tests first as you see fit like renaming methods etc.
+    - in the example we have passed a user object
 
     - `phpunit --testdox` to see the test names
     - `composer require --dev phpunit/phpunit symfony/var-dumper`
