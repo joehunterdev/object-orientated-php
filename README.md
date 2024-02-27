@@ -96,6 +96,11 @@ In this course, you'll learn how to use these different levels of visibility to 
 - You can ofcourse use other classes into your classes that have came from external sources
 
 ### Traits 🧩
+ - Add different functionaly to classes
+ - Imagine a logger function that we would like to share across classes.
+ - **You cant inherit from multiple parents in php**
+ - `use LoggeableTrait` this goes **inside the class**
+ - if the same method is defined in the class that one will take presidence
 
 ### Static Keyword, Static Methods and Late Static Binding 📌
 
