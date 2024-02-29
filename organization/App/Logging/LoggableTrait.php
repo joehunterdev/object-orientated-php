@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Logging;
 
 trait LoggableTrait
@@ -6,7 +7,7 @@ trait LoggableTrait
 
     protected $logger;
     use LoggableTrait;
-    
+
     public function setLogger(Logger $logger)
     {
         echo 'Called from ' . __METHOD__ . PHP_EOL;
@@ -14,11 +15,8 @@ trait LoggableTrait
         $this->logger = $logger;
     }
 
-    public function getLogger(): void
+    public function getLogger()
     {
         return $this->logger;
-    }
-    {
-        $this->logger;
     }
 }

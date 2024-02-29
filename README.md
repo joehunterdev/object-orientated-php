@@ -96,15 +96,32 @@ In this course, you'll learn how to use these different levels of visibility to 
 - You can ofcourse use other classes into your classes that have came from external sources
 
 ### Traits 🧩
- - Add different functionaly to classes
- - Imagine a logger function that we would like to share across classes.
- - **You cant inherit from multiple parents in php**
- - `use LoggeableTrait` this goes **inside the class**
- - if the same method is defined in the class that one will take presidence
+
+- Add different functionaly to classes
+- Imagine a logger function that we would like to share across classes.
+- **You cant inherit from multiple parents in php**
+- `use LoggeableTrait` this goes **inside the class**
+- if the same method is defined in the class that one will take presidence
 
 ### Static Keyword, Static Methods and Late Static Binding 📌
 
+- Calling of the class rather than the object `Attendee::doSomething`
+- an be called directly on the class itself, **without needing to instantiate** an object of the class
+
+- Late Static referes to the class being called not the mthod being defined
+- You may want to call the object on parent class
+
 ### Error Handling With Exceptions ❗
+
+- Expceptions are thrown
+- Try Catch will help you handle these exception.
+    - line
+    - file
+    - message
+- When adding custom exceptions use `BadJsonException extends \Exception` so php will go looking in the namespace for it. 
+- Call custom multiple exceptions in your catch.
+- Exeptions can be grouped using `|` like a catch all catch (FileNotFoundException $e | BadJsonException $e )
+- The `final` keyword can be used to handle stuff that needs to be done at the end. Closing db connection or unlinking a file thats open or something
 
 ### Quiz 4: Organizing Object Oriented Code 📝
 

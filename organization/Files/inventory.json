@@ -1,0 +1,27 @@
+[
+    {
+        "item_id":"1",
+        "name":"Torch",
+        "price":"20"
+    },
+    {
+        "item_id":"2",
+        "name":"Bulb",
+        "price":"10"
+    },
+    {
+        "item_id":"3",
+        "name":"Fan",
+        "price":"100"
+    },
+    {
+        "item_id":"4",
+        "name":"Tube Light",
+        "price":"50"
+    },
+    {
+        "item_id":"5",
+        "name":"LED",
+        "price":"200"
+    }
+]
