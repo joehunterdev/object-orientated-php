@@ -71,7 +71,7 @@ In this course, you'll learn how to use these different levels of visibility to 
     - Injecting this single type is not as usefull `public function updateStockFromFile(string $path, CsvFileReader $fileReader): array`
     - Using `instanceof` we can check if the object is of a certain type
 
---- 
+---
 
 ### Namespaces 📚
 
@@ -119,24 +119,29 @@ In this course, you'll learn how to use these different levels of visibility to 
 - Exeptions can be grouped using `|` like a catch all catch (FileNotFoundException $e | BadJsonException $e )
 - The `final` keyword can be used to handle stuff that needs to be done at the end. Closing db connection or unlinking a file thats open or something
 
-### Quiz 4: Organizing Object Oriented Code 📝
-
-### Composer - Install 3rd Party Packages 📦
-
-### Installing MySQL on your computer 🛠️
+  ***
 
 ### Introduction to PHP Data Objects (PDO) 📚
+
 - `dsn` is your data source name
 - You typically define your basic cnx details and a charset
 - You can also define **options** to define things like return data types these are typically just const with numbers behind the scenes
 - Its also good practice to define a try catch and finally to close connection afterwords
 - When returning errors you can use the PDO exception which gives away less info for attack
 
-###  Date and Time Revision
+### Date and Time Revision
 
-###  DateTime and DateInterval classes
+- `(L)` is a flag for leap year
+- You can define timezone also programatically or set it in .ini
 
-### PDO Practice 🎯
+### DateTime and DateInterval classes
+
+- Datetime objects have tones of usefull functions like `format`
+  - implements `datetime` interface
+- `//Static Instantiation $dateTime = DateTime::createFromFormat('Y-m-d H:i:s', '2024-05-01 12:00:00');`
+- `$past->diff($present);`
+- `$start = new DateTimeImmutable('2020-01-01'); // This will now be fixed and cannot be changed can be good for password reset where user needs just a fixed frame of time to reset password`
+- create an array of user objects using the data returned. Note that even if you are querying for a single user, you will still get an arra `fetchAll(PDO::FETCH_CLASS,\App\User)`
 
 ---
 
@@ -197,6 +202,7 @@ In this course, you'll learn how to use these different levels of visibility to 
     - Mocking is creating objects that simulate the behavior of real objects sending emails or api requests.
     - ` /tests` for all in the folder
     - we can also group them for example in a group called db `/tests --group db` || even exclude ` --exclude-group db`
+    -
 
 ### Introduction to test driven development 🧪
 

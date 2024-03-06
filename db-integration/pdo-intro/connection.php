@@ -27,8 +27,8 @@ try {
 //}
 
 $stmt = $pdo->prepare('SELECT * from users WHERE email = :email AND name = :name');
-$email = 'gary@example.com';
-$name = 'Gary Clarke';
+$email = 'joe.hunter.dev@gmail.com';
+$name = 'Joe Hunter';
 $stmt->execute(['email' => $email, 'name' => $name]);
 $user = $stmt->fetch();
 
