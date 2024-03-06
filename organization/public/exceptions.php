@@ -18,6 +18,7 @@ use App\Utility\JsonFileReader;
     <?php
     try {
 
+        
         $jsonFileReader = new JsonFileReader();
         $path = '../Files/inventory.json';
         $inventory = $jsonFileReader->readFileAssociativeArray($path);
@@ -26,15 +27,19 @@ use App\Utility\JsonFileReader;
 
         
     } catch (FileNotFoundException $e ) {
+
         echo "Message:" . $e->getMessage() . "<br>";
         echo "File:" . $e->getFile() . "<br>";
         echo "Line:" . $e->getLine() . "<br>";
+
     } catch (BadJsonException $e) {
+
         echo "Message:" . $e->getMessage() . "<br>";
-        echo "File:" . $e->getFile() . "<br>";
-        echo "Line:" . $e->getLine() . "<br>";
+        echo "File:" . $e->getFile()       . "<br>";
+        echo "Line:" . $e->getLine()       . "<br>";
     }
 
+    // Grouped
     try{
 
         $path = '../Files/inventory.json';
@@ -49,7 +54,7 @@ use App\Utility\JsonFileReader;
     } finally {
 
         echo "Finally block";
-        
+
     }
 
     ?>

@@ -49,13 +49,11 @@ In this course, you'll learn how to use these different levels of visibility to 
 ### Abstract Classes 📜
 
     - An abstract class is a class that **cannot be instantiated on its own** and is typically used as a base class for other classes.
-
     - The abstract class provides properties and funciontality which is shared by all the classes that inherit from it.
 
 ### Abstract Methods 🖋️
 
         - Declared in an abstract class implementation is provided by the classes that inherit from the abstract class.
-
         - if class extends three dimensions shape aka abstract it must implement the abstract method `getVolume`
         - Good for:
             - You want to provide a common interface for different classes
@@ -73,9 +71,7 @@ In this course, you'll learn how to use these different levels of visibility to 
     - Injecting this single type is not as usefull `public function updateStockFromFile(string $path, CsvFileReader $fileReader): array`
     - Using `instanceof` we can check if the object is of a certain type
 
-### Quiz 3: Knowledge check three 📝
-
----
+--- 
 
 ### Namespaces 📚
 
@@ -115,10 +111,10 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 - Expceptions are thrown
 - Try Catch will help you handle these exception.
-    - line
-    - file
-    - message
-- When adding custom exceptions use `BadJsonException extends \Exception` so php will go looking in the namespace for it. 
+  - line
+  - file
+  - message
+- When adding custom exceptions use `BadJsonException extends \Exception` so php will go looking in the namespace for it.
 - Call custom multiple exceptions in your catch.
 - Exeptions can be grouped using `|` like a catch all catch (FileNotFoundException $e | BadJsonException $e )
 - The `final` keyword can be used to handle stuff that needs to be done at the end. Closing db connection or unlinking a file thats open or something
@@ -130,6 +126,15 @@ In this course, you'll learn how to use these different levels of visibility to 
 ### Installing MySQL on your computer 🛠️
 
 ### Introduction to PHP Data Objects (PDO) 📚
+- `dsn` is your data source name
+- You typically define your basic cnx details and a charset
+- You can also define **options** to define things like return data types these are typically just const with numbers behind the scenes
+- Its also good practice to define a try catch and finally to close connection afterwords
+- When returning errors you can use the PDO exception which gives away less info for attack
+
+###  Date and Time Revision
+
+###  DateTime and DateInterval classes
 
 ### PDO Practice 🎯
 
@@ -207,7 +212,7 @@ In this course, you'll learn how to use these different levels of visibility to 
     - `composer require --dev phpunit/phpunit symfony/var-dumper`
     - `composer dump-autoload -o`
 
----
+--- Skipped Section 7
 
 ### Final Keyword 📚
 
@@ -219,7 +224,7 @@ In this course, you'll learn how to use these different levels of visibility to 
 
 ### Comparing Objects 📚
 
----
+-- Skipeed Section 8
 
 ### Array Revision 📚
 

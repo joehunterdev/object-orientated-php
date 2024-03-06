@@ -31,3 +31,4 @@ Thumbs.db
 .phpunit.result.cache
 
 **/cache
+**/_dev
